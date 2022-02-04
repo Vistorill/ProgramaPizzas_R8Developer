@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemy Pizzas Delivery Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+    <script src="tableToExcel.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li>
+                <h1>Projeto Pizzas</h1>
+            </li>
+            <li>
+                <h2>Vendas de Pizzas</h2>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+
+       
+        <form action="">
+            <h3>Selecione a Pizza</h3>
+            <ul>
+                <li><input type="radio" id="mussarela" name="pizzas"><label for="mussarela"> Mussarela</label></li>
+                <li><input type="radio" id="mista" name="pizzas"><label  for="mista"> Mista</label></li>
+                <li><input type="radio" id="calabresa" name="pizzas"><label  for="calabresa"> Calabresa</label></li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="vendas">Vendas</button>
+        <button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Sabores</th>
+                <th>Qunatidade</th>
+                <th>Valores</th>
+            </tr>
+            
+
+            <tr>
+                <td>Mussarela</td><td id="resultadoMussarela"></td><td id="vendaMussarela"></td>
+            </tr>
+            <tr>
+                <td>Mista</td><td id="resultadoMista"></td><td id="vendaMista"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td><td id="resultadoCalabresa"></td><td id="vendaCalabresa"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+
+</body>
+
+</html>
